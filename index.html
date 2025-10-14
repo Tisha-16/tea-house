@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script
-      src="https://kit.fontawesome.com/0b5415b146.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/font.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Tea House</title>
   </head>
-  <body></body>
+
+  <body class="bg-white">
+    <section class="lg:flex-row px-[230px] lg:px-32 mx-auto">
+      <!-- Left Text -->
+      <div
+        class="max-w-[1200px] flex items-center justify-between lg:text-left"
+      >
+        <div>
+          <h1 class="text-[80px] lg:text-5xl font-extrabold text-black">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+
+          <p class="text-gray-500 my-10">
+            Tea and Botanical Solutions Supplier Give Optimum <br />
+            Satisfaction To Your Taste Buds.
+          </p>
+
+          <button
+            class="bg-gradient-to-r from-[#ff8938] to-[#ff0000] text-white text-xl w-[200px] h-[64px] rounded-md hover:bg-orange-700 transition"
+          >
+            Explore More &#8599;
+          </button>
+        </div>
+
+        <!-- Right Images -->
+        <div class="lg:mt-0 relative">
+          <img
+            src="./images/Group 1000000916.png"
+            alt=""
+            class="relative top-[120px]"
+          />
+          <div
+            class="pl-[27px] pr-[50px] py-[19px] flex items-center bg-white shadow-md rounded-lg absolute left-[100px]"
+          >
+            <div class="text-yellow-400 text-2xl">★</div>
+            <div class="ml-4">
+              <p class="font-bold text-gray-900 text-lg">5.00</p>
+              <p class="text-sm text-gray-500">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
